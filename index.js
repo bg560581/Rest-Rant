@@ -6,15 +6,12 @@ const app = express()
 
 app.use('/places', require('./controllers/places'))
 
-// creates homepage route.
 app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-// 404 wildcard
-
 app.get('*', (req, res) => {
-    res.status(404)("<h1>I'm sorry, you have reached a 404 :(</h1>")
+    res.status(404).send('<h1>Im sorry, you have reached a 404 :(</h1>')
 })
 
 // listen for connections
