@@ -22,7 +22,7 @@ app.get('/places', (req, res) => {
 
 // 404 PAGE
 app.get('*', (req,res) => {
-    res.send('404 page')
+    res.render('error404')
 })
 
 
