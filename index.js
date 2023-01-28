@@ -15,28 +15,9 @@ app.get('/', (req, res) => {
     res.render('home')
 })
 
-// PLACES PAGE
-app.get('/places', (req, res) => {
-    res.send('Hello World!')
-})
-
 // 404 PAGE
 app.get('*', (req,res) => {
     res.render('error404')
-})
-
-
-
-
-
-
-
-
-
-
-
-app.get('*', (req, res) => {
-    res.status(404).send('<h1>Im sorry, you have reached a 404 :(</h1>')
 })
 
 // listen for connections
