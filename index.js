@@ -1,27 +1,27 @@
-// require needed modules.
-
+// Modules and Globals
 require('dotenv').config()
 const express = require('express')
 const app = express()
 
+// Express Settings
+app.set('views', __dirname + '/views')
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
+app.use(express.static('public'))
 
 // Controllers & Routes
 app.use('/places', require('./controllers/places'))
 
-// INDEX PAGE
 app.get('/', (req, res) => {
     res.render('home')
 })
 
-// 404 PAGE
-app.get('*', (req,res) => {
+app.get('*', (req, res) => {
     res.render('error404')
 })
 
-// listen for connections
-
-app.listen(process.env.PORT, function() { 
-    console.log('Powered UP!!')
+// Listen for Connections
+app.listen(process.env.PORT, function (){
+ console.log('power UP')
 })
+
