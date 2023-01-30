@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    color: cornflowerblue;
+  }
+
+img {
+  width: 50%;
+  
+}
+
+button {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.Par {
+  text-align: center;
+  font-size: 45px;
+}
