@@ -6,9 +6,9 @@ function home () {
         <Def>
             <main>
                 <h1>HOME</h1>
-                <div>
+                <div className='home'>
                   <img src="/images/Produce.jpg" alt="Produce"/>
-                 <div><p>Photo by</p><a href="https://unsplash.com/@thomasble?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thomas Le</a> on <a href="https://unsplash.com/s/photos/free-food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
+                 <div className='home'><p>Photo by</p><a href="https://unsplash.com/@thomasble?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thomas Le</a> on <a href="https://unsplash.com/s/photos/free-food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
   
                 </div>
 

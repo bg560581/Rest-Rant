@@ -4,13 +4,22 @@ h1 {
 }
 
 img {
-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 
+}
+
+.home {
+  text-align: center;
 }
 
 button {
 background-color: cornflowerblue;
 color: white;
+ position: absolute;
+ left: 50%;
 }
 
 .Par {
@@ -22,6 +31,9 @@ font-size: 45px;
 nav {
 background-color: cornflowerblue;
 padding: 10px;
+text-align: center;
+width: 100%;
+
 }
 
 nav ul {
@@ -42,4 +54,8 @@ font-size: 1.5em;
 nav a:hover {
 color: pink;
 text-decoration: none;
+}
+
+.form-control {
+  margin-left: 25px;
 }
