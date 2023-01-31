@@ -1,11 +1,10 @@
 const router = require('express').Router()
 const places = require('../models/places.js')
 
-router.get('/', (req, res) => {
-    res.render('places/index', { places })
-})
-
-
+router.get('/new', (req, res) => {
+    res.render('places/new')
+  })
+  
 router.post('/', (req, res) => {
     if (!req.body.pic) {
       // Default image if one is not provided
@@ -21,11 +20,11 @@ router.post('/', (req, res) => {
     res.redirect('/places')
   })
   
-
-// GET /places
 router.get('/', (req, res) => {
-    res.render ('places/index', {places})
+    res.render('places/index', { places })
 })
 
 
+
 module.exports = router
+  
