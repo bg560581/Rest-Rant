@@ -16,6 +16,19 @@ function edit_form (data) {
                         <label htmlFor="pic">Place Picture</label>
                         <input id="pic"/>
                     </div>
+                    <div className="form-group col-sm-6">
+                        <label htmlFor="city">City</label>
+                        <input id="city"/>
+                    </div>
+                    <div className="form-group col-sm-6">
+                        <label htmlFor="state">State</label>
+                        <input id="state"/>
+                    </div>
+                    <div className="form-group col-sm-6">
+                        <label htmlFor="cuisines">Cuisines</label>
+                        <input id="cuisines"/>
+                    </div>
+                    <input type="submit"/>
                 </div>
             </form>
         </main>
