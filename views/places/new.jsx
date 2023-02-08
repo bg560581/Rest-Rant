@@ -16,28 +16,31 @@ function new_form (data) {
             <h1>Add a New Place</h1>
             {message}
             <form method="POST" action="/places">
-                <div className="form-group">
+            <div className="row">
+                <div className="form-group col-sm-6">
                     <label htmlFor="name">Place Name</label>
                     <input 
                         className="form-control" 
                         id="name" 
                         name="name" required />
                 </div>
-                <div className="form-group">
+                <div className="form-group col-sm-6">
                     <label htmlFor="pic">Place Picture</label>
                     <input 
                         className="form-control" 
                         id="pic" 
                         name="pic" />
                 </div>
-                <div className="form-group">
+            </div>
+            <div className='row'>
+                <div className="form-group col-sm-4">
                     <label htmlFor="city">City</label>
                     <input 
                         className="form-control" 
                         id="city" 
                         name="city" />
                 </div>
-                <div className="form-group">
+                <div className="form-group col-sm-4">
                     <label htmlFor="state">State</label>
                     <input 
                         className="form-control" 
@@ -51,7 +54,7 @@ function new_form (data) {
                         id="cuisines" 
                         name="cuisines" required />
                 </div>
-                <div className="form-group">
+                <div className="form-group col-sm-4">
                     <label htmlfor="founded">Founded Year</label>
                     <input 
                         type='number' 
@@ -60,7 +63,7 @@ function new_form (data) {
                         name="founded" 
                         value={new Date().getFullYear()} />
                 </div>
-
+                </div>
                 <input 
                     className="btn btn-primary" 
                     type="submit" 

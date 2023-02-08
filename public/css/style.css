@@ -59,3 +59,21 @@ text-decoration: none;
 .form-control {
   margin-left: 25px;
 }
+
+.btn-story {
+  background-color: cornflowerblue;
+}
+
+.comments {
+  text-align: center;
+}
+
+.col-sm-6 {
+  text-align: center;
+  padding: 5px;
+}
+
+.rantOrRave {
+  font-size: 15px;
+  text-align: center;
+}
