@@ -36,9 +36,9 @@ function show (data) {
             <stong>- {c.author}</stong>
           </h3>
           <h4>Rating: {c.stars}</h4>
-          {/* <form method="POST" action={`/places/${data.place.id}/comment/${c.id}?_method=DELETE`}>
+          <form method="POST" action={`/places/${data.place.id}/comment/${c.id}?_method=DELETE`}>
               <input type="submit" className="btn btn-danger" value="Delete Comment" />
-            </form> */}
+            </form>
         </div>
       )
     })
@@ -86,7 +86,7 @@ function show (data) {
             {comments}
         </div>
         <hr />
-        <h2>Have a Rant or Rave You Wanna Share?</h2>
+        <h2 className='rantAbout'>Have a Rant or Rave You Wanna Share?</h2>
         <form className='comments' action={`/places/${data.place.id}/comment`} method="POST">
                 <div className="row">
                     <div className="form-group col-sm-12">

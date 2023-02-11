@@ -18,8 +18,17 @@ img {
 button {
 background-color: cornflowerblue;
 color: white;
- position: absolute;
+ /* position: absolute; */
  left: 50%;
+ margin: 15px;
+}
+
+.btn-warning {
+  padding: 10px;
+}
+
+.btn {
+  margin: 5px;
 }
 
 .Par {
@@ -75,5 +84,9 @@ text-decoration: none;
 
 .rantOrRave {
   font-size: 15px;
+  text-align: center;
+}
+
+.rantAbout {
   text-align: center;
 }
